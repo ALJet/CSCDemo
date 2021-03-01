@@ -1,0 +1,384 @@
+{% extends 'base.html' %}
+{% load my_tags %}
+{#{% load humanize %}#}
+
+{% block left %}
+    {% block before_main_left %}{% endblock %}
+    <div class="panel panel-default">
+        <div class="panel-body panel-subtitle">
+            <span class="label label-success">{{ panel_title }}</span>
+            {% if show_order %}
+              <span class="pull-right ordering">
+                排序:
+                <span>
+                  <a href="{% change_lpg_ordering request 'started' %}">按日期升序</a>
+                </span>
+                <span>
+                  <a href="{% change_lpg_ordering request '-started' %}">按日期降序</a>
+                </span>
+              <span>
+                  <a href="{% change_lpg_ordering request 'transaction_no' %}">按流水号升序</a>
+                </span>
+              <span>
+                  <a href="{% change_lpg_ordering request '-transaction_no' %}">按流水号降序</a>
+                </span>
+              </span>
+            {% endif %}
+        </div>
+        <!-- List group -->
+        <div class="media-left media-middle" style="text-align:center;" >
+{#        <ul class="list-group topic-list">#}
+            <table border="1">
+                <tr>
+                    <th>
+                        <div class="media-body media-middle" style="text-align: center;">
+                            序号
+                    </div>
+                    </th>
+                    <th>
+
+                        <div class="media-body media-middle" style="text-align: center;">
+                            流水号
+
+
+                    </div>
+                    </th>
+                    <th>
+                    <div class="media-body media-middle" style="text-align: center;">
+                            比例
+                    </div>
+                    </th>
+                    <th>
+                    <div class="media-body media-middle" style="text-align: center;">
+                            车道
+                    </div>
+                        </th>
+                    <th>
+                    <div class="media-body media-middle" style="text-align: center;">
+                            提单号
+                    </div>
+                    </th>
+
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            客户号
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            车牌号
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            预装数量
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            实际数量
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            开始时间
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            结束时间
+                    </div>
+                    </th>
+
+                    <th>
+                <div class="media-middle" style="text-align: center;width:80px;">
+                            充装时间
+                    </div>
+                    </th>
+
+                    <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            入库时间
+                    </div>
+                    </th>
+
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            C4 数量
+                    </div>
+                    </th>
+                <th>
+                <div class="media-body media-middle" style="text-align: center;">
+                            C3 数量
+                    </div>
+                    </th>
+                </tr>
+
+
+
+
+                {% for lpg in lpg_list %}
+                    {# 来设置超装 显示红色 70分钟 和gross大于25500 #}
+                    {% if lpg.gross >= 25500 or lpg.fill_time >= 70 %}
+                        <tr style="color: dodgerblue;background:gold">
+
+                        <td >
+                            <a href="{% url 'edit' pk=lpg.id %}" >
+
+                        <div class="media-body media-middle">
+
+                                {{ lpg.id }}
+
+                        </div>
+                            </a>
+                            </td>
+                        <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.transaction_no }}
+
+                        </div>
+                        </td>
+                        <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.proportion }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.bay }}
+
+                        </div>
+                                </td>
+
+
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.bl_no }}
+
+                        </div>
+                                </td>
+
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.customer_no }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.drive_no }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.preset }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.gross }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.started|date:"Y-m-d H:i:s" }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.stopped|date:"Y-m-d H:i:s" }}
+
+                        </div>
+                                </td>
+
+                        <td>
+                            <div class="media-body media-middle" >
+
+                                {{ lpg.fill_time}}
+
+                        </div>
+                                </td>
+
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.load_database_time|date:"Y-m-d H:i:s"}}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.butane }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.propane }}
+
+                        </div>
+                            </td>
+
+                    </tr>
+                    {% else %}
+                        <tr style="color: dodgerblue;">
+
+                        <td >
+                            <a href="{% url 'edit' pk=lpg.id %}" >
+
+                        <div class="media-body media-middle">
+
+                                {{ lpg.id }}
+
+                        </div>
+                            </a>
+                            </td>
+                        <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.transaction_no }}
+
+                        </div>
+                        </td>
+                        <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.proportion }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.bay }}
+
+                        </div>
+                                </td>
+
+
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.bl_no }}
+
+                        </div>
+                                </td>
+
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.customer_no }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.drive_no }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.preset }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.gross }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.started|date:"Y-m-d H:i:s" }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.stopped|date:"Y-m-d H:i:s" }}
+
+                        </div>
+                                </td>
+
+                        <td>
+                            <div class="media-body media-middle" >
+
+                                {{ lpg.fill_time}}
+
+                        </div>
+                                </td>
+
+                            <td>
+                            <div class="media-body media-middle" style="width: 25000px;">
+
+                                {{ lpg.load_database_time|date:"Y-m-d H:i:s"}}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.butane }}
+
+                        </div>
+                                </td>
+                            <td>
+                            <div class="media-body media-middle">
+
+                                {{ lpg.propane }}
+
+                        </div>
+                            </td>
+
+                    </tr>
+                    {% endif %}
+
+
+
+                {% endfor %}
+
+
+            </table>
+{#        </ul>#}
+
+            <div class="my_excel"  >
+                <a href="{% url 'export_excel' %}"><button value="" style="color:black">导出文件</button></a>
+                <span>(将数据导出到Excel中)</span>
+            </div>
+        </div>
+    
+
+
+
+        <div class="panel-footer">
+            {% get_pagination %}
+        </div>
+    </div>
+{% endblock %}
+
+
+

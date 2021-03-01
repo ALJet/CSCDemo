@@ -1,0 +1,1351 @@
+[pid: 23009|app: 0|req: 1/1] 192.168.1.38 () {46 vars in 908 bytes} [Thu Oct 24 16:25:54 2019] GET / => generated 1841 bytes in 207 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 1/2] 192.168.1.38 () {56 vars in 1140 bytes} [Thu Oct 24 16:25:57 2019] POST /login/ => generated 2053 bytes in 402 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 2/3] 192.168.1.38 () {56 vars in 1146 bytes} [Thu Oct 24 16:26:01 2019] POST /login/ => generated 0 bytes in 183 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 3/4] 192.168.1.38 () {50 vars in 994 bytes} [Thu Oct 24 16:26:02 2019] GET /index/ => generated 147556 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 4/5] 192.168.1.188 () {46 vars in 861 bytes} [Thu Oct 24 16:34:59 2019] GET / => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 1/6] 192.168.1.188 () {52 vars in 1027 bytes} [Thu Oct 24 16:35:06 2019] POST /login/ => generated 0 bytes in 291 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 1/7] 192.168.1.188 () {48 vars in 910 bytes} [Thu Oct 24 16:35:07 2019] GET /index/ => generated 147557 bytes in 267 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 23010|app: 0|req: 2/8] 192.168.1.38 () {46 vars in 908 bytes} [Thu Oct 24 16:37:58 2019] GET / => generated 1841 bytes in 160 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 23008|app: 0|req: 5/9] 192.168.1.38 () {56 vars in 1140 bytes} [Thu Oct 24 16:38:00 2019] POST /login/ => generated 0 bytes in 207 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 3/10] 192.168.1.38 () {50 vars in 988 bytes} [Thu Oct 24 16:38:00 2019] GET /index/ => generated 147557 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-09-23
+[pid: 23010|app: 0|req: 4/11] 192.168.1.38 () {48 vars in 997 bytes} [Thu Oct 24 16:38:22 2019] GET /search/date=2019-09-23/ => generated 146464 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-23
+[pid: 23008|app: 0|req: 6/12] 192.168.1.38 () {48 vars in 1014 bytes} [Thu Oct 24 16:38:40 2019] GET /search/date=2019-10-23/ => generated 146500 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-23
+[pid: 23008|app: 0|req: 7/13] 192.168.1.38 () {48 vars in 1026 bytes} [Thu Oct 24 16:38:46 2019] GET /search/date=2019-10-23/page/2 => generated 22713 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+keywords =  date=2019-10-23
+[pid: 22984|app: 0|req: 2/14] 192.168.1.38 () {48 vars in 1020 bytes} [Thu Oct 24 16:38:49 2019] GET /search/date=2019-10-23/ => generated 146500 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-22
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 23009|app: 0|req: 2/15] 192.168.1.38 () {48 vars in 1014 bytes} [Thu Oct 24 16:39:14 2019] GET /search/date=2019-10-22/ => generated 146520 bytes in 89 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-22
+[pid: 23010|app: 0|req: 5/16] 192.168.1.38 () {48 vars in 1026 bytes} [Thu Oct 24 16:39:20 2019] GET /search/date=2019-10-22/page/2 => generated 29599 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-10-21
+[pid: 23010|app: 0|req: 6/17] 192.168.1.38 () {48 vars in 1020 bytes} [Thu Oct 24 16:40:13 2019] GET /search/date=2019-10-21/ => generated 146529 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-21
+[pid: 23009|app: 0|req: 3/18] 192.168.1.38 () {48 vars in 1026 bytes} [Thu Oct 24 16:40:56 2019] GET /search/date=2019-10-21/page/2 => generated 43360 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-10-20
+[pid: 23009|app: 0|req: 4/19] 192.168.1.38 () {48 vars in 1020 bytes} [Thu Oct 24 16:42:04 2019] GET /search/date=2019-10-20/ => generated 146580 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-20
+[pid: 22984|app: 0|req: 3/20] 192.168.1.38 () {48 vars in 1026 bytes} [Thu Oct 24 16:42:06 2019] GET /search/date=2019-10-20/page/2 => generated 22713 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-10-21
+[pid: 23010|app: 0|req: 7/21] 192.168.1.38 () {48 vars in 1020 bytes} [Thu Oct 24 16:44:12 2019] GET /search/date=2019-10-21/ => generated 146529 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-20
+[pid: 23010|app: 0|req: 8/22] 192.168.1.38 () {48 vars in 1014 bytes} [Thu Oct 24 16:44:15 2019] GET /search/date=2019-10-20/ => generated 146580 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  bay=6 date=2019-10-18
+[pid: 23010|app: 0|req: 9/23] 192.168.1.38 () {48 vars in 1028 bytes} [Thu Oct 24 16:44:35 2019] GET /search/bay=6%20date=2019-10-18/ => generated 8201 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+keywords =  bay=6 date=2019-10-17
+[pid: 23009|app: 0|req: 5/24] 192.168.1.38 () {48 vars in 1036 bytes} [Thu Oct 24 16:44:42 2019] GET /search/bay=6%20date=2019-10-17/ => generated 8201 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+keywords =  bay=6
+[pid: 23009|app: 0|req: 6/25] 192.168.1.38 () {48 vars in 1002 bytes} [Thu Oct 24 16:44:47 2019] GET /search/bay=6/ => generated 146642 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  bay=6
+[pid: 23009|app: 0|req: 7/26] 192.168.1.38 () {48 vars in 996 bytes} [Thu Oct 24 16:44:56 2019] GET /search/bay=6/page/3 => generated 33192 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  bay=6
+[pid: 23009|app: 0|req: 8/27] 192.168.1.38 () {48 vars in 990 bytes} [Thu Oct 24 16:44:58 2019] GET /search/bay=6/ => generated 146642 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Not Found: /favicon.ico
+[pid: 22984|app: 0|req: 4/28] 192.168.1.80 () {44 vars in 756 bytes} [Fri Oct 25 05:55:23 2019] GET /favicon.ico => generated 3669 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 23010|app: 0|req: 10/29] 192.168.1.80 () {46 vars in 887 bytes} [Fri Oct 25 05:55:28 2019] GET / => generated 1841 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 11/30] 192.168.1.38 () {46 vars in 908 bytes} [Fri Oct 25 09:15:50 2019] GET / => generated 1841 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 9/31] 192.168.1.38 () {56 vars in 1140 bytes} [Fri Oct 25 09:15:52 2019] POST /login/ => generated 0 bytes in 254 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 10/32] 192.168.1.38 () {50 vars in 988 bytes} [Fri Oct 25 09:15:53 2019] GET /index/ => generated 147561 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 12/33] 192.168.1.38 () {48 vars in 963 bytes} [Fri Oct 25 09:16:20 2019] GET /index/ => generated 147561 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 11/34] 192.168.1.38 () {48 vars in 963 bytes} [Fri Oct 25 09:16:21 2019] GET /index/ => generated 147561 bytes in 91 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 13/35] 192.168.1.38 () {48 vars in 969 bytes} [Fri Oct 25 09:16:22 2019] GET /overload/ => generated 8074 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 5/36] 192.168.1.38 () {48 vars in 968 bytes} [Fri Oct 25 09:16:23 2019] GET /upload/ => generated 4321 bytes in 57 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 14/37] 192.168.1.38 () {48 vars in 964 bytes} [Fri Oct 25 09:16:29 2019] GET /index/ => generated 147561 bytes in 81 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 12/38] 192.168.1.38 () {48 vars in 965 bytes} [Fri Oct 25 09:16:30 2019] GET /upload/ => generated 4321 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 6/39] 192.168.1.38 () {48 vars in 970 bytes} [Fri Oct 25 09:16:31 2019] GET /overload/ => generated 8074 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 8/40] 192.168.1.38 () {48 vars in 966 bytes} [Fri Oct 25 09:16:33 2019] GET /index/ => generated 147561 bytes in 95 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 7/41] 192.168.1.38 () {48 vars in 965 bytes} [Fri Oct 25 09:16:34 2019] GET /upload/ => generated 4321 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 13/42] 192.168.1.38 () {46 vars in 908 bytes} [Fri Oct 25 12:52:59 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 15/43] 192.168.1.38 () {56 vars in 1140 bytes} [Fri Oct 25 12:53:02 2019] POST /login/ => generated 0 bytes in 192 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 16/44] 192.168.1.38 () {50 vars in 988 bytes} [Fri Oct 25 12:53:02 2019] GET /index/ => generated 147579 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 17/45] 192.168.1.188 () {46 vars in 861 bytes} [Fri Oct 25 13:07:34 2019] GET / => generated 1841 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 14/46] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Oct 25 13:07:38 2019] POST /login/ => generated 0 bytes in 263 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 18/47] 192.168.1.188 () {48 vars in 910 bytes} [Fri Oct 25 13:07:39 2019] GET /index/ => generated 147579 bytes in 102 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 19/48] 192.168.1.188 () {48 vars in 924 bytes} [Fri Oct 25 13:08:08 2019] GET /edit/1946/ => generated 8785 bytes in 135 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 20/49] 192.168.1.188 () {48 vars in 920 bytes} [Fri Oct 25 13:08:20 2019] GET /index/ => generated 147579 bytes in 162 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 21/50] 192.168.1.188 () {48 vars in 916 bytes} [Fri Oct 25 13:08:28 2019] GET /index/ => generated 147579 bytes in 112 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 8/51] 192.168.1.80 () {46 vars in 887 bytes} [Fri Oct 25 21:13:19 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 22/52] 192.168.1.80 () {46 vars in 887 bytes} [Sat Oct 26 14:25:39 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 23/53] 192.168.1.80 () {46 vars in 887 bytes} [Sun Oct 27 14:34:48 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 24/54] 192.168.1.38 () {46 vars in 907 bytes} [Mon Oct 28 09:10:23 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 25/55] 192.168.1.38 () {56 vars in 1139 bytes} [Mon Oct 28 09:10:26 2019] POST /login/ => generated 0 bytes in 248 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 26/56] 192.168.1.38 () {50 vars in 987 bytes} [Mon Oct 28 09:10:26 2019] GET /index/ => generated 147574 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 27/57] 192.168.1.38 () {48 vars in 962 bytes} [Mon Oct 28 09:10:40 2019] GET /page/2 => generated 148029 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 15/58] 192.168.1.38 () {48 vars in 962 bytes} [Mon Oct 28 09:10:44 2019] GET /page/3 => generated 148239 bytes in 89 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 28/59] 192.168.1.38 () {48 vars in 962 bytes} [Mon Oct 28 09:10:51 2019] GET /page/4 => generated 148458 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 16/60] 192.168.1.38 () {48 vars in 962 bytes} [Mon Oct 28 09:11:01 2019] GET /page/5 => generated 148699 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 9/61] 192.168.1.38 () {48 vars in 962 bytes} [Mon Oct 28 09:11:07 2019] GET /index/ => generated 147574 bytes in 108 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 17/62] 192.168.1.38 () {48 vars in 964 bytes} [Mon Oct 28 09:11:37 2019] GET /page/53 => generated 119947 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 29/63] 192.168.1.38 () {48 vars in 963 bytes} [Mon Oct 28 09:11:40 2019] GET /index/ => generated 147574 bytes in 92 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 30/64] 192.168.1.38 () {46 vars in 908 bytes} [Mon Oct 28 16:05:37 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 18/65] 192.168.1.38 () {56 vars in 1140 bytes} [Mon Oct 28 16:05:40 2019] POST /login/ => generated 0 bytes in 216 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 31/66] 192.168.1.38 () {50 vars in 988 bytes} [Mon Oct 28 16:05:41 2019] GET /index/ => generated 147566 bytes in 110 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 32/67] 192.168.1.80 () {46 vars in 887 bytes} [Mon Oct 28 17:10:21 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 33/68] 192.168.1.38 () {46 vars in 908 bytes} [Tue Oct 29 09:31:23 2019] GET / => generated 1841 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 34/69] 192.168.1.38 () {56 vars in 1140 bytes} [Tue Oct 29 09:31:26 2019] POST /login/ => generated 0 bytes in 204 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 9/70] 192.168.1.38 () {50 vars in 988 bytes} [Tue Oct 29 09:31:26 2019] GET /index/ => generated 147557 bytes in 113 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 35/71] 192.168.1.38 () {48 vars in 963 bytes} [Tue Oct 29 09:32:23 2019] GET /index/ => generated 147557 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 36/72] 192.168.1.38 () {48 vars in 963 bytes} [Tue Oct 29 09:32:28 2019] GET /index/ => generated 147557 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 19/73] 192.168.1.38 () {48 vars in 969 bytes} [Tue Oct 29 09:32:29 2019] GET /overload/ => generated 8074 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 10/74] 192.168.1.38 () {48 vars in 966 bytes} [Tue Oct 29 09:32:30 2019] GET /index/ => generated 147557 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 10/75] 192.168.1.38 () {48 vars in 969 bytes} [Tue Oct 29 09:32:32 2019] GET /overload/ => generated 8074 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 20/76] 192.168.1.38 () {48 vars in 968 bytes} [Tue Oct 29 09:32:39 2019] GET /upload/ => generated 4321 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 11/77] 192.168.1.38 () {48 vars in 964 bytes} [Tue Oct 29 09:32:40 2019] GET /index/ => generated 147557 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23009|app: 0|req: 21/78] 192.168.1.38 () {48 vars in 965 bytes} [Tue Oct 29 09:32:53 2019] GET /logout/ => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 37/79] 192.168.1.38 () {48 vars in 932 bytes} [Tue Oct 29 10:54:29 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 38/80] 192.168.1.38 () {46 vars in 908 bytes} [Tue Oct 29 11:19:41 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 12/81] 192.168.1.80 () {46 vars in 887 bytes} [Tue Oct 29 16:02:15 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 39/82] 192.168.1.38 () {46 vars in 907 bytes} [Tue Oct 29 16:14:23 2019] GET / => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 13/83] 192.168.1.38 () {56 vars in 1139 bytes} [Tue Oct 29 16:14:26 2019] POST /login/ => generated 0 bytes in 220 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 11/84] 192.168.1.38 () {50 vars in 987 bytes} [Tue Oct 29 16:14:26 2019] GET /index/ => generated 147566 bytes in 86 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 14/85] 192.168.1.80 () {46 vars in 887 bytes} [Wed Oct 30 21:18:40 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 40/86] 192.168.1.188 () {46 vars in 861 bytes} [Thu Oct 31 10:12:21 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 154, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 538, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1369, in to_python
+    parsed = parse_datetime(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/dateparse.py", line 106, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+
+[pid: 22984|app: 0|req: 15/87] 192.168.1.188 () {52 vars in 1027 bytes} [Thu Oct 31 10:12:24 2019] POST /login/ => generated 0 bytes in 228 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 41/88] 192.168.1.188 () {48 vars in 910 bytes} [Thu Oct 31 10:12:24 2019] GET /index/ => generated 147556 bytes in 118 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 42/89] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:17:20 2019] GET /index/ => generated 147556 bytes in 89 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 43/90] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:17:22 2019] GET /index/ => generated 147556 bytes in 90 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 44/91] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:18:08 2019] GET /index/ => generated 147556 bytes in 99 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23008|app: 0|req: 12/92] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:18:10 2019] GET /index/ => generated 147552 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23010|app: 0|req: 45/93] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:18:11 2019] GET /index/ => generated 147550 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 22984|app: 0|req: 16/94] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:18:14 2019] GET /index/ => generated 147550 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 31 10:19:57 2019] ***
+compiled with version: 5.4.0 20160609 on 26 August 2019 03:57:08
+os: Linux-4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016
+nodename: xus-Standard-PC-i440FX-PIIX-1996
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/wwwroot/CSCDemo
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/CSCDemo/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7843
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, May  7 2019, 14:58:50)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1912b00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291680 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1912b00 pid: 26636 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 26636, cores: 1)
+spawned uWSGI worker 2 (pid: 26641, cores: 1)
+spawned uWSGI worker 3 (pid: 26642, cores: 1)
+spawned uWSGI worker 4 (pid: 26643, cores: 1)
+[pid: 26643|app: 0|req: 1/1] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:25:54 2019] GET /index/ => generated 147550 bytes in 321 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-30
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 154, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 538, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+myApp.models.LPGRecord.MultipleObjectsReturned: get() returned more than one LPGRecord -- it returned 2!
+
+[pid: 26643|app: 0|req: 2/2] 192.168.1.188 () {48 vars in 950 bytes} [Thu Oct 31 10:29:47 2019] GET /search/date=2019-10-30/ => generated 146522 bytes in 118 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-30
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26643|app: 0|req: 3/3] 192.168.1.188 () {48 vars in 1008 bytes} [Thu Oct 31 10:31:47 2019] GET /search/date=2019-10-30/?order=transaction_no => generated 146563 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-30
+[pid: 26643|app: 0|req: 4/4] 192.168.1.188 () {48 vars in 1041 bytes} [Thu Oct 31 10:32:02 2019] GET /search/date=2019-10-30/page/2?order=transaction_no => generated 125975 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-30
+[pid: 26642|app: 0|req: 1/5] 192.168.1.188 () {48 vars in 1035 bytes} [Thu Oct 31 10:32:25 2019] GET /search/date=2019-10-30/?order=transaction_no => generated 146563 bytes in 272 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-10-31
+[pid: 26642|app: 0|req: 2/6] 192.168.1.188 () {48 vars in 988 bytes} [Thu Oct 31 10:32:38 2019] GET /search/date=2019-10-31/ => generated 90733 bytes in 81 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-10-31
+[pid: 26643|app: 0|req: 5/7] 192.168.1.188 () {48 vars in 1008 bytes} [Thu Oct 31 10:32:44 2019] GET /search/date=2019-10-31/?order=transaction_no => generated 90733 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 6/8] 192.168.1.188 () {48 vars in 954 bytes} [Thu Oct 31 10:33:06 2019] GET /index/ => generated 147550 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 7/9] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:46 2019] GET /index/ => generated 147550 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 154, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 538, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+myApp.models.LPGRecord.MultipleObjectsReturned: get() returned more than one LPGRecord -- it returned 2!
+
+[pid: 26642|app: 0|req: 3/10] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:47 2019] GET /index/ => generated 147550 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 8/11] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:47 2019] GET /index/ => generated 147550 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 9/12] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:48 2019] GET /index/ => generated 147550 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 1/13] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:49 2019] GET /index/ => generated 147550 bytes in 282 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 10/14] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:49 2019] GET /index/ => generated 147550 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 4/15] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:51 2019] GET /index/ => generated 147550 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 2/16] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:52 2019] GET /index/ => generated 147550 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 11/17] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:52 2019] GET /index/ => generated 147550 bytes in 115 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 1/18] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:33:52 2019] GET /index/ => generated 147550 bytes in 388 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 154, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 538, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+myApp.models.LPGRecord.MultipleObjectsReturned: get() returned more than one LPGRecord -- it returned 2!
+
+[pid: 26636|app: 0|req: 3/19] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:34:08 2019] GET /index/ => generated 147550 bytes in 96 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 12/20] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:34:43 2019] GET /index/ => generated 147550 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 5/21] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:34:43 2019] GET /index/ => generated 147550 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 13/22] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 10:34:43 2019] GET /index/ => generated 147550 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26642|app: 0|req: 6/23] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:01 2019] GET /index/ => generated 147550 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26643|app: 0|req: 14/24] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:03 2019] GET /index/ => generated 147550 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 154, in read2db
+    started=started_af, stopped=stopped_af,
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 538, in get_or_create
+    return self.get(**kwargs), False
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+myApp.models.LPGRecord.MultipleObjectsReturned: get() returned more than one LPGRecord -- it returned 2!
+
+[pid: 26641|app: 0|req: 2/25] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:03 2019] GET /index/ => generated 147550 bytes in 101 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 15/26] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:03 2019] GET /index/ => generated 147550 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 7/27] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:29 2019] GET /index/ => generated 147550 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 16/28] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:30 2019] GET /index/ => generated 147550 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26636|app: 0|req: 4/29] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:30 2019] GET /index/ => generated 147550 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 8/30] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:31 2019] GET /index/ => generated 147550 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 3/31] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:31 2019] GET /index/ => generated 147550 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 5/32] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:14:32 2019] GET /index/ => generated 147550 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 6/33] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:15:51 2019] GET /index/ => generated 147550 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 7/34] 192.168.1.188 () {48 vars in 918 bytes} [Thu Oct 31 11:16:18 2019] GET /upload/ => generated 4321 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 9/35] 192.168.1.188 () {48 vars in 917 bytes} [Thu Oct 31 11:16:19 2019] GET /index/ => generated 147550 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 17/36] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:17:30 2019] GET /index/ => generated 147550 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 10/37] 192.168.1.80 () {46 vars in 887 bytes} [Thu Oct 31 11:18:01 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 18/38] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:19:24 2019] GET /index/ => generated 147550 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 11/39] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:19:24 2019] GET /index/ => generated 147550 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 4/40] 192.168.1.38 () {46 vars in 907 bytes} [Thu Oct 31 11:23:06 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 8/41] 192.168.1.38 () {56 vars in 1139 bytes} [Thu Oct 31 11:23:09 2019] POST /login/ => generated 0 bytes in 228 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 5/42] 192.168.1.38 () {50 vars in 987 bytes} [Thu Oct 31 11:23:10 2019] GET /index/ => generated 147550 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 19/43] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:23:14 2019] GET /index/ => generated 147550 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 20/44] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:23:42 2019] GET /index/ => generated 147550 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 21/45] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:27:19 2019] GET /index/ => generated 147550 bytes in 91 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 6/46] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:27:19 2019] GET /index/ => generated 147550 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 7/47] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:27:20 2019] GET /index/ => generated 147550 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 22/48] 192.168.1.38 () {46 vars in 907 bytes} [Thu Oct 31 11:30:00 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 23/49] 192.168.1.38 () {56 vars in 1139 bytes} [Thu Oct 31 11:30:03 2019] POST /login/ => generated 0 bytes in 200 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 9/50] 192.168.1.38 () {50 vars in 987 bytes} [Thu Oct 31 11:30:03 2019] GET /index/ => generated 147550 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 24/51] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:06 2019] GET /index/ => generated 147550 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 12/52] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:06 2019] GET /index/ => generated 147550 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 25/53] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:07 2019] GET /index/ => generated 147550 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 13/54] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:07 2019] GET /index/ => generated 147550 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 26/55] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:07 2019] GET /index/ => generated 147550 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 10/56] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:08 2019] GET /index/ => generated 147550 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 8/57] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:08 2019] GET /index/ => generated 147550 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 27/58] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:19 2019] GET /index/ => generated 147550 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 28/59] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:20 2019] GET /index/ => generated 147550 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 14/60] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:20 2019] GET /index/ => generated 147548 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 11/61] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:22 2019] GET /index/ => generated 147548 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 12/62] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:30:42 2019] GET /index/ => generated 147548 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 13/63] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:31:23 2019] GET /index/ => generated 147548 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 29/64] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:53 2019] GET /index/ => generated 147548 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 15/65] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:54 2019] GET /index/ => generated 147548 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 14/66] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:55 2019] GET /index/ => generated 147548 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 9/67] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:55 2019] GET /index/ => generated 147548 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 30/68] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:55 2019] GET /index/ => generated 147548 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 16/69] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:55 2019] GET /index/ => generated 147548 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 10/70] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:56 2019] GET /index/ => generated 147548 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 11/71] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:57 2019] GET /index/ => generated 147548 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 12/72] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:33:57 2019] GET /index/ => generated 147548 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26641|app: 0|req: 13/73] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:34:10 2019] GET /index/ => generated 147548 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 31/74] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:34:10 2019] GET /index/ => generated 147548 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 32/75] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:35 2019] GET /index/ => generated 147548 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 17/76] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:36 2019] GET /index/ => generated 147548 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 33/77] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:37 2019] GET /index/ => generated 147548 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 34/78] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:37 2019] GET /index/ => generated 147548 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 35/79] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:37 2019] GET /index/ => generated 147548 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 15/80] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:35:37 2019] GET /index/ => generated 147548 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26636|app: 0|req: 16/81] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:49:19 2019] GET /index/ => generated 147548 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 18/82] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:49:20 2019] GET /index/ => generated 147548 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 36/83] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 11:49:20 2019] GET /index/ => generated 147548 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 37/84] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:56:12 2019] GET /index/ => generated 147548 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 19/85] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 11:56:13 2019] GET /index/ => generated 147548 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26643|app: 0|req: 38/86] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:14:45 2019] GET /index/ => generated 147535 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26642|app: 0|req: 20/87] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:14:45 2019] GET /index/ => generated 147535 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 31 13:22:55 2019] ***
+compiled with version: 5.4.0 20160609 on 26 August 2019 03:57:08
+os: Linux-4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016
+nodename: xus-Standard-PC-i440FX-PIIX-1996
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /data/wwwroot/CSCDemo
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /data/wwwroot/CSCDemo/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7843
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8997 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, May  7 2019, 14:58:50)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xa5cb00
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291680 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa5cb00 pid: 26592 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 26592, cores: 1)
+spawned uWSGI worker 2 (pid: 26601, cores: 1)
+spawned uWSGI worker 3 (pid: 26602, cores: 1)
+spawned uWSGI worker 4 (pid: 26603, cores: 1)
+[pid: 26602|app: 0|req: 1/1] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:23:06 2019] GET /index/ => generated 147535 bytes in 330 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 1/2] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:23:08 2019] GET /index/ => generated 147535 bytes in 273 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 2/3] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:23:09 2019] GET /index/ => generated 147535 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 1/4] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:23:09 2019] GET /index/ => generated 147535 bytes in 354 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 2/5] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:23:16 2019] GET /index/ => generated 147535 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 3/6] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:24:31 2019] GET /index/ => generated 147535 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 2/7] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:24:32 2019] GET /index/ => generated 147535 bytes in 106 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 4/8] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:25:22 2019] GET /index/ => generated 147535 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 3/9] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:25:23 2019] GET /index/ => generated 147535 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26602|app: 0|req: 3/10] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:28:56 2019] GET /index/ => generated 147536 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 4/11] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:29:51 2019] GET /index/ => generated 147536 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26603|app: 0|req: 5/12] 192.168.1.188 () {48 vars in 916 bytes} [Thu Oct 31 13:31:01 2019] GET /index/ => generated 147536 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 6/13] 192.168.1.188 () {48 vars in 959 bytes} [Thu Oct 31 13:34:37 2019] GET /index/?order=-transaction_no => generated 147728 bytes in 90 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 5/14] 192.168.1.188 () {48 vars in 979 bytes} [Thu Oct 31 13:34:38 2019] GET /index/?order=transaction_no => generated 147584 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26592|app: 0|req: 4/15] 192.168.1.188 () {48 vars in 964 bytes} [Thu Oct 31 13:34:40 2019] GET /index/?order=started => generated 147484 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 5/16] 192.168.1.188 () {48 vars in 930 bytes} [Thu Oct 31 13:34:42 2019] GET /index/ => generated 147536 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 7/17] 192.168.1.188 () {46 vars in 861 bytes} [Thu Oct 31 13:35:30 2019] GET / => generated 1841 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 6/18] 192.168.1.188 () {52 vars in 1027 bytes} [Thu Oct 31 13:35:33 2019] POST /login/ => generated 0 bytes in 249 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 6/19] 192.168.1.188 () {48 vars in 910 bytes} [Thu Oct 31 13:35:33 2019] GET /index/ => generated 147536 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 7/20] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 13:45:01 2019] GET /index/ => generated 147536 bytes in 95 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26603|app: 0|req: 8/21] 192.168.1.38 () {46 vars in 907 bytes} [Thu Oct 31 14:39:39 2019] GET / => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 1/22] 192.168.1.38 () {56 vars in 1139 bytes} [Thu Oct 31 14:39:42 2019] POST /login/ => generated 0 bytes in 304 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 2/23] 192.168.1.38 () {50 vars in 987 bytes} [Thu Oct 31 14:39:42 2019] GET /index/ => generated 147533 bytes in 169 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 9/24] 192.168.1.38 () {48 vars in 962 bytes} [Thu Oct 31 14:39:44 2019] GET /index/ => generated 147533 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 10/25] 192.168.1.38 () {46 vars in 907 bytes} [Thu Oct 31 16:22:11 2019] GET / => generated 1841 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 11/26] 192.168.1.38 () {56 vars in 1139 bytes} [Thu Oct 31 16:22:14 2019] POST /login/ => generated 0 bytes in 210 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26592|app: 0|req: 8/27] 192.168.1.38 () {50 vars in 987 bytes} [Thu Oct 31 16:22:14 2019] GET /index/ => generated 147532 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 9/28] 192.168.1.188 () {46 vars in 861 bytes} [Thu Oct 31 16:25:33 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 10/29] 192.168.1.188 () {52 vars in 1027 bytes} [Thu Oct 31 16:25:37 2019] POST /login/ => generated 0 bytes in 210 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 12/30] 192.168.1.188 () {48 vars in 910 bytes} [Thu Oct 31 16:25:38 2019] GET /index/ => generated 147532 bytes in 114 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 13/31] 192.168.1.38 () {46 vars in 908 bytes} [Fri Nov  1 09:17:05 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 14/32] 192.168.1.38 () {56 vars in 1140 bytes} [Fri Nov  1 09:17:08 2019] POST /login/ => generated 0 bytes in 199 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26601|app: 0|req: 3/33] 192.168.1.38 () {50 vars in 988 bytes} [Fri Nov  1 09:17:08 2019] GET /index/ => generated 147559 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 15/34] 192.168.1.38 () {48 vars in 965 bytes} [Fri Nov  1 09:21:20 2019] GET /page/61 => generated 34031 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 4/35] 192.168.1.38 () {48 vars in 964 bytes} [Fri Nov  1 09:21:22 2019] GET /index/ => generated 147559 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 16/36] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  1 11:58:03 2019] GET /index/ => generated 147565 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 17/37] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  1 12:58:08 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 18/38] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  1 12:58:15 2019] POST /login/ => generated 0 bytes in 215 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 11/39] 192.168.1.188 () {48 vars in 910 bytes} [Fri Nov  1 12:58:15 2019] GET /index/ => generated 147565 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 19/40] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:58:22 2019] GET /index/ => generated 147565 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 12/41] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:58:32 2019] GET /index/ => generated 147565 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 20/42] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:58:40 2019] GET /index/ => generated 147565 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 21/43] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:58:54 2019] GET /index/ => generated 147565 bytes in 101 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 22/44] 192.168.1.188 () {48 vars in 943 bytes} [Fri Nov  1 12:58:59 2019] GET /index/?order=started => generated 147484 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 13/45] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  1 12:59:09 2019] GET /index/?order=-transaction_no => generated 147723 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 14/46] 192.168.1.188 () {48 vars in 938 bytes} [Fri Nov  1 12:59:11 2019] GET /index/ => generated 147565 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 23/47] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:59:21 2019] GET /index/ => generated 147565 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 15/48] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 12:59:22 2019] GET /index/ => generated 147565 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 24/49] 192.168.1.188 () {48 vars in 918 bytes} [Fri Nov  1 12:59:23 2019] GET /upload/ => generated 4321 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/read_com_data.py", line 94, in FirstReader
+    data = self.l_serial.read()
+  File "/usr/local/lib/python3.6/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+[pid: 26602|app: 0|req: 7/50] 192.168.1.188 () {48 vars in 917 bytes} [Fri Nov  1 12:59:24 2019] GET /index/ => generated 147565 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 25/51] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  1 13:11:13 2019] GET / => generated 1841 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 8/52] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  1 13:11:18 2019] POST /login/ => generated 0 bytes in 217 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 26/53] 192.168.1.188 () {48 vars in 910 bytes} [Fri Nov  1 13:11:18 2019] GET /index/ => generated 147565 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 27/54] 192.168.1.188 () {48 vars in 922 bytes} [Fri Nov  1 13:11:55 2019] GET /overload/ => generated 8074 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 28/55] 192.168.1.188 () {48 vars in 921 bytes} [Fri Nov  1 13:11:56 2019] GET /upload/ => generated 4321 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 29/56] 192.168.1.188 () {48 vars in 917 bytes} [Fri Nov  1 13:11:58 2019] GET /index/ => generated 147565 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 30/57] 192.168.1.188 () {48 vars in 924 bytes} [Fri Nov  1 13:12:55 2019] GET /edit/2416/ => generated 8783 bytes in 132 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 26603|app: 0|req: 31/58] 192.168.1.188 () {44 vars in 799 bytes} [Fri Nov  1 13:13:05 2019] GET /favicon.ico => generated 3669 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 32/59] 192.168.1.188 () {48 vars in 924 bytes} [Fri Nov  1 13:13:07 2019] GET /edit/2413/ => generated 8783 bytes in 139 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 33/60] 192.168.1.188 () {48 vars in 924 bytes} [Fri Nov  1 13:13:13 2019] GET /edit/2404/ => generated 8783 bytes in 136 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 16/61] 192.168.1.188 () {48 vars in 922 bytes} [Fri Nov  1 13:13:22 2019] GET /overload/ => generated 8074 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 34/62] 192.168.1.188 () {48 vars in 919 bytes} [Fri Nov  1 13:15:16 2019] GET /index/ => generated 147565 bytes in 110 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 17/63] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  1 13:31:27 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 35/64] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  1 13:31:33 2019] POST /login/ => generated 0 bytes in 267 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 9/65] 192.168.1.188 () {48 vars in 910 bytes} [Fri Nov  1 13:31:33 2019] GET /index/ => generated 147565 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 36/66] 192.168.1.188 () {48 vars in 959 bytes} [Fri Nov  1 13:31:38 2019] GET /index/?order=-transaction_no => generated 147723 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 18/67] 192.168.1.188 () {48 vars in 938 bytes} [Fri Nov  1 13:31:40 2019] GET /index/ => generated 147565 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 19/68] 192.168.1.188 () {48 vars in 918 bytes} [Fri Nov  1 13:31:50 2019] GET /upload/ => generated 4321 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 26603|app: 0|req: 37/69] 192.168.1.188 () {44 vars in 799 bytes} [Fri Nov  1 13:31:52 2019] GET /favicon.ico => generated 3669 bytes in 24 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 20/70] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:31:53 2019] GET /index/ => generated 147565 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 38/71] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:32:15 2019] GET /index/ => generated 147565 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 39/72] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:32:26 2019] GET /index/ => generated 147565 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 5/73] 192.168.1.188 () {48 vars in 922 bytes} [Fri Nov  1 13:32:27 2019] GET /overload/ => generated 8074 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 40/74] 192.168.1.188 () {48 vars in 919 bytes} [Fri Nov  1 13:32:34 2019] GET /index/ => generated 147565 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 21/75] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:32:36 2019] GET /index/ => generated 147565 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 22/76] 192.168.1.188 () {48 vars in 957 bytes} [Fri Nov  1 13:32:46 2019] GET /index/?order=transaction_no => generated 147584 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 41/77] 192.168.1.188 () {48 vars in 980 bytes} [Fri Nov  1 13:32:47 2019] GET /index/?order=-transaction_no => generated 147723 bytes in 83 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 23/78] 192.168.1.188 () {48 vars in 965 bytes} [Fri Nov  1 13:32:51 2019] GET /index/?order=started => generated 147484 bytes in 112 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 6/79] 192.168.1.188 () {48 vars in 932 bytes} [Fri Nov  1 13:33:30 2019] GET /upload/ => generated 4321 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 42/80] 192.168.1.188 () {48 vars in 917 bytes} [Fri Nov  1 13:33:31 2019] GET /index/ => generated 147565 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 24/81] 192.168.1.188 () {48 vars in 922 bytes} [Fri Nov  1 13:33:37 2019] GET /overload/ => generated 8074 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 43/82] 192.168.1.188 () {48 vars in 919 bytes} [Fri Nov  1 13:33:38 2019] GET /index/ => generated 147565 bytes in 89 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 25/83] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:33:39 2019] GET /index/ => generated 147565 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 44/84] 192.168.1.188 () {48 vars in 922 bytes} [Fri Nov  1 13:33:45 2019] GET /overload/ => generated 8074 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 26/85] 192.168.1.188 () {48 vars in 921 bytes} [Fri Nov  1 13:33:46 2019] GET /upload/ => generated 4321 bytes in 50 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 45/86] 192.168.1.188 () {48 vars in 917 bytes} [Fri Nov  1 13:33:47 2019] GET /index/ => generated 147565 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 27/87] 192.168.1.188 () {48 vars in 918 bytes} [Fri Nov  1 13:33:47 2019] GET /upload/ => generated 4321 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 46/88] 192.168.1.188 () {48 vars in 923 bytes} [Fri Nov  1 13:33:48 2019] GET /overload/ => generated 8074 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 28/89] 192.168.1.188 () {48 vars in 921 bytes} [Fri Nov  1 13:33:48 2019] GET /upload/ => generated 4321 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 10/90] 192.168.1.188 () {48 vars in 917 bytes} [Fri Nov  1 13:33:49 2019] GET /index/ => generated 147565 bytes in 111 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 29/91] 192.168.1.188 () {48 vars in 943 bytes} [Fri Nov  1 13:34:01 2019] GET /index/?order=started => generated 147484 bytes in 101 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 11/92] 192.168.1.188 () {48 vars in 971 bytes} [Fri Nov  1 13:34:02 2019] GET /index/?order=transaction_no => generated 147584 bytes in 99 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 47/93] 192.168.1.188 () {48 vars in 980 bytes} [Fri Nov  1 13:34:03 2019] GET /index/?order=-transaction_no => generated 147723 bytes in 85 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 12/94] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  1 13:34:04 2019] GET /index/?order=transaction_no => generated 147584 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 48/95] 192.168.1.188 () {48 vars in 966 bytes} [Fri Nov  1 13:34:05 2019] GET /index/?order=-started => generated 147670 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 49/96] 192.168.1.188 () {48 vars in 958 bytes} [Fri Nov  1 13:34:07 2019] GET /index/?order=started => generated 147484 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 50/97] 192.168.1.188 () {48 vars in 930 bytes} [Fri Nov  1 13:35:50 2019] GET /index/ => generated 147565 bytes in 107 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 51/98] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:36:52 2019] GET /index/ => generated 147565 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 52/99] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:41:16 2019] GET /index/ => generated 147565 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 30/100] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:41:17 2019] GET /index/ => generated 147565 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 53/101] 192.168.1.188 () {48 vars in 918 bytes} [Fri Nov  1 13:41:34 2019] GET /upload/ => generated 4321 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 31/102] 192.168.1.188 () {48 vars in 923 bytes} [Fri Nov  1 13:41:34 2019] GET /overload/ => generated 8074 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 54/103] 192.168.1.188 () {48 vars in 919 bytes} [Fri Nov  1 13:41:39 2019] GET /index/ => generated 147565 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 32/104] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:41:40 2019] GET /index/ => generated 147565 bytes in 85 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 33/105] 192.168.1.188 () {48 vars in 943 bytes} [Fri Nov  1 13:43:13 2019] GET /index/?order=started => generated 147484 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 55/106] 192.168.1.188 () {48 vars in 930 bytes} [Fri Nov  1 13:43:14 2019] GET /index/ => generated 147565 bytes in 83 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 34/107] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:43:20 2019] GET /index/ => generated 147565 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 7/108] 192.168.1.188 () {48 vars in 945 bytes} [Fri Nov  1 13:43:25 2019] GET /index/?order=-started => generated 147670 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 13/109] 192.168.1.188 () {48 vars in 958 bytes} [Fri Nov  1 13:43:27 2019] GET /index/?order=started => generated 147484 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 56/110] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  1 13:43:30 2019] GET /index/?order=-transaction_no => generated 147723 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 35/111] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  1 13:43:31 2019] GET /index/?order=transaction_no => generated 147584 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 57/112] 192.168.1.188 () {48 vars in 966 bytes} [Fri Nov  1 13:43:33 2019] GET /index/?order=-started => generated 147670 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 36/113] 192.168.1.188 () {48 vars in 931 bytes} [Fri Nov  1 13:43:33 2019] GET /index/ => generated 147565 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 37/114] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 13:47:44 2019] GET /index/ => generated 147567 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 58/115] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  1 14:00:42 2019] GET /index/ => generated 147566 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 59/116] 192.168.1.38 () {46 vars in 907 bytes} [Fri Nov  1 15:07:35 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 60/117] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  1 16:31:30 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 38/118] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  1 16:31:34 2019] POST /login/ => generated 0 bytes in 268 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 61/119] 192.168.1.188 () {48 vars in 910 bytes} [Fri Nov  1 16:31:34 2019] GET /index/ => generated 147566 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 26592|app: 0|req: 39/120] 192.168.1.80 () {44 vars in 756 bytes} [Sat Nov  2 14:36:51 2019] GET /favicon.ico => generated 3669 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 40/121] 192.168.1.80 () {46 vars in 843 bytes} [Sat Nov  2 14:36:55 2019] GET / => generated 1841 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 41/122] 192.168.1.80 () {46 vars in 843 bytes} [Sun Nov  3 14:53:09 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 42/123] 192.168.1.80 () {46 vars in 843 bytes} [Mon Nov  4 07:39:06 2019] GET / => generated 1841 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 8/124] 192.168.1.38 () {46 vars in 907 bytes} [Mon Nov  4 09:39:26 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 14/125] 192.168.1.38 () {56 vars in 1139 bytes} [Mon Nov  4 09:39:29 2019] POST /login/ => generated 0 bytes in 192 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 9/126] 192.168.1.38 () {50 vars in 987 bytes} [Mon Nov  4 09:39:30 2019] GET /index/ => generated 147559 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 43/127] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov  4 09:39:41 2019] GET /index/ => generated 147559 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 62/128] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov  4 09:39:59 2019] GET /index/ => generated 147559 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 10/129] 192.168.1.38 () {48 vars in 964 bytes} [Mon Nov  4 09:40:00 2019] GET /upload/ => generated 4321 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 44/130] 192.168.1.38 () {48 vars in 969 bytes} [Mon Nov  4 09:40:00 2019] GET /overload/ => generated 8074 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 63/131] 192.168.1.38 () {48 vars in 965 bytes} [Mon Nov  4 09:40:02 2019] GET /index/ => generated 147559 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 45/132] 192.168.1.38 () {48 vars in 964 bytes} [Mon Nov  4 09:40:02 2019] GET /upload/ => generated 4321 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 15/133] 192.168.1.38 () {48 vars in 969 bytes} [Mon Nov  4 09:40:03 2019] GET /overload/ => generated 8074 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 64/134] 192.168.1.38 () {48 vars in 967 bytes} [Mon Nov  4 09:40:05 2019] GET /upload/ => generated 4321 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 46/135] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov  4 09:40:06 2019] GET /index/ => generated 147559 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 65/136] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov  4 09:40:08 2019] GET /index/ => generated 147559 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  s
+[pid: 26592|app: 0|req: 47/137] 192.168.1.38 () {48 vars in 968 bytes} [Mon Nov  4 09:40:11 2019] GET /search/s/ => generated 8113 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 66/138] 192.168.1.38 () {48 vars in 965 bytes} [Mon Nov  4 09:40:12 2019] GET /index/ => generated 147559 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 48/139] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov  4 09:40:13 2019] GET /index/ => generated 147559 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 67/140] 192.168.1.38 () {48 vars in 932 bytes} [Mon Nov  4 15:23:29 2019] GET / => generated 1841 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 68/141] 192.168.1.38 () {46 vars in 908 bytes} [Mon Nov  4 15:53:27 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 49/142] 192.168.1.38 () {56 vars in 1140 bytes} [Mon Nov  4 15:53:29 2019] POST /login/ => generated 0 bytes in 205 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 69/143] 192.168.1.38 () {50 vars in 988 bytes} [Mon Nov  4 15:53:29 2019] GET /index/ => generated 147566 bytes in 123 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 70/144] 192.168.1.80 () {46 vars in 843 bytes} [Mon Nov  4 21:27:23 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 50/145] 192.168.1.38 () {46 vars in 907 bytes} [Tue Nov  5 09:14:33 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 16/146] 192.168.1.38 () {56 vars in 1139 bytes} [Tue Nov  5 09:14:36 2019] POST /login/ => generated 2053 bytes in 202 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 17/147] 192.168.1.38 () {56 vars in 1145 bytes} [Tue Nov  5 09:14:39 2019] POST /login/ => generated 0 bytes in 250 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 51/148] 192.168.1.38 () {50 vars in 993 bytes} [Tue Nov  5 09:14:40 2019] GET /index/ => generated 147572 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 71/149] 192.168.1.38 () {46 vars in 907 bytes} [Tue Nov  5 09:42:12 2019] GET / => generated 1841 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 52/150] 192.168.1.38 () {56 vars in 1139 bytes} [Tue Nov  5 09:42:15 2019] POST /login/ => generated 0 bytes in 190 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 53/151] 192.168.1.38 () {50 vars in 987 bytes} [Tue Nov  5 09:42:16 2019] GET /index/ => generated 147572 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 11/152] 192.168.1.38 () {48 vars in 964 bytes} [Tue Nov  5 09:42:38 2019] GET /upload/ => generated 4321 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 72/153] 192.168.1.38 () {48 vars in 969 bytes} [Tue Nov  5 09:42:38 2019] GET /overload/ => generated 8074 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 12/154] 192.168.1.38 () {48 vars in 965 bytes} [Tue Nov  5 09:42:39 2019] GET /index/ => generated 147572 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 73/155] 192.168.1.38 () {48 vars in 964 bytes} [Tue Nov  5 09:42:42 2019] GET /page/67 => generated 113074 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 54/156] 192.168.1.38 () {48 vars in 963 bytes} [Tue Nov  5 09:42:44 2019] GET /index/ => generated 147572 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 74/157] 192.168.1.38 () {46 vars in 907 bytes} [Tue Nov  5 14:00:04 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 55/158] 192.168.1.38 () {56 vars in 1139 bytes} [Tue Nov  5 14:00:06 2019] POST /login/ => generated 0 bytes in 218 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 56/159] 192.168.1.38 () {50 vars in 987 bytes} [Tue Nov  5 14:00:07 2019] GET /index/ => generated 147566 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 57/160] 192.168.1.38 () {48 vars in 962 bytes} [Tue Nov  5 14:00:16 2019] GET /index/ => generated 147566 bytes in 81 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 58/161] 192.168.1.188 () {46 vars in 861 bytes} [Tue Nov  5 14:26:05 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 59/162] 192.168.1.188 () {52 vars in 1027 bytes} [Tue Nov  5 14:26:07 2019] POST /login/ => generated 0 bytes in 227 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 75/163] 192.168.1.188 () {48 vars in 910 bytes} [Tue Nov  5 14:26:07 2019] GET /index/ => generated 147562 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 76/164] 192.168.1.80 () {46 vars in 843 bytes} [Tue Nov  5 21:30:06 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 60/165] 192.168.1.38 () {46 vars in 908 bytes} [Wed Nov  6 09:16:41 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 18/166] 192.168.1.38 () {56 vars in 1140 bytes} [Wed Nov  6 09:16:44 2019] POST /login/ => generated 0 bytes in 190 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 61/167] 192.168.1.38 () {50 vars in 988 bytes} [Wed Nov  6 09:16:44 2019] GET /index/ => generated 147578 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 77/168] 192.168.1.38 () {48 vars in 963 bytes} [Wed Nov  6 09:16:59 2019] GET /index/ => generated 147578 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 78/169] 192.168.1.80 () {46 vars in 843 bytes} [Wed Nov  6 12:21:51 2019] GET / => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 79/170] 192.168.1.38 () {46 vars in 907 bytes} [Wed Nov  6 12:59:14 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 62/171] 192.168.1.38 () {56 vars in 1139 bytes} [Wed Nov  6 12:59:17 2019] POST /login/ => generated 0 bytes in 208 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 80/172] 192.168.1.38 () {50 vars in 987 bytes} [Wed Nov  6 12:59:17 2019] GET /index/ => generated 147558 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 81/173] 192.168.1.188 () {46 vars in 861 bytes} [Wed Nov  6 13:05:19 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 82/174] 192.168.1.188 () {52 vars in 1027 bytes} [Wed Nov  6 13:05:23 2019] POST /login/ => generated 0 bytes in 236 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 63/175] 192.168.1.188 () {48 vars in 910 bytes} [Wed Nov  6 13:05:24 2019] GET /index/ => generated 147558 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 83/176] 192.168.1.188 () {48 vars in 916 bytes} [Wed Nov  6 13:05:38 2019] GET /index/ => generated 147558 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 64/177] 192.168.1.188 () {48 vars in 918 bytes} [Wed Nov  6 13:05:39 2019] GET /upload/ => generated 4321 bytes in 45 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 84/178] 192.168.1.188 () {48 vars in 917 bytes} [Wed Nov  6 13:07:27 2019] GET /index/ => generated 147558 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 85/179] 192.168.1.188 () {46 vars in 861 bytes} [Wed Nov  6 13:11:08 2019] GET / => generated 1841 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 65/180] 192.168.1.188 () {52 vars in 1027 bytes} [Wed Nov  6 13:11:11 2019] POST /login/ => generated 0 bytes in 212 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 86/181] 192.168.1.188 () {48 vars in 910 bytes} [Wed Nov  6 13:11:11 2019] GET /index/ => generated 147558 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 66/182] 192.168.1.80 () {46 vars in 843 bytes} [Thu Nov  7 06:24:23 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 67/183] 192.168.1.38 () {46 vars in 907 bytes} [Thu Nov  7 09:20:13 2019] GET / => generated 1841 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 68/184] 192.168.1.38 () {56 vars in 1139 bytes} [Thu Nov  7 09:20:16 2019] POST /login/ => generated 0 bytes in 188 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 87/185] 192.168.1.38 () {50 vars in 987 bytes} [Thu Nov  7 09:20:16 2019] GET /index/ => generated 147575 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 88/186] 192.168.1.38 () {48 vars in 962 bytes} [Thu Nov  7 09:21:17 2019] GET /index/ => generated 147575 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 69/187] 192.168.1.38 () {48 vars in 964 bytes} [Thu Nov  7 09:21:18 2019] GET /upload/ => generated 4321 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 89/188] 192.168.1.38 () {48 vars in 963 bytes} [Thu Nov  7 09:21:19 2019] GET /index/ => generated 147575 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 90/189] 192.168.1.188 () {46 vars in 861 bytes} [Thu Nov  7 11:31:41 2019] GET / => generated 1841 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 13/190] 192.168.1.188 () {52 vars in 1027 bytes} [Thu Nov  7 11:31:50 2019] POST /login/ => generated 0 bytes in 254 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 91/191] 192.168.1.188 () {48 vars in 910 bytes} [Thu Nov  7 11:31:50 2019] GET /index/ => generated 147572 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 92/192] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:32:33 2019] GET /index/ => generated 147572 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 93/193] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:34:55 2019] GET /page/2 => generated 147989 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 70/194] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:35:02 2019] GET /page/3 => generated 148248 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 71/195] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:35:18 2019] GET /page/4 => generated 148456 bytes in 87 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 94/196] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:35:33 2019] GET /page/5 => generated 148689 bytes in 62 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 72/197] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:35:39 2019] GET /page/6 => generated 148909 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 95/198] 192.168.1.188 () {48 vars in 916 bytes} [Thu Nov  7 11:35:45 2019] GET /page/7 => generated 149209 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 96/199] 192.168.1.80 () {46 vars in 843 bytes} [Thu Nov  7 20:38:20 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 97/200] 192.168.1.38 () {46 vars in 908 bytes} [Fri Nov  8 09:06:38 2019] GET / => generated 1841 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 73/201] 192.168.1.38 () {56 vars in 1140 bytes} [Fri Nov  8 09:06:40 2019] POST /login/ => generated 0 bytes in 199 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 74/202] 192.168.1.38 () {50 vars in 988 bytes} [Fri Nov  8 09:06:41 2019] GET /index/ => generated 147544 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 98/203] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:32:43 2019] GET /index/ => generated 147545 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 99/204] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:38:31 2019] GET /page/2 => generated 147997 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 100/205] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:38:38 2019] GET /page/3 => generated 148232 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 19/206] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:38:47 2019] GET /page/2 => generated 147997 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 20/207] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:40:55 2019] GET /page/4 => generated 148459 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 101/208] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:53:00 2019] GET /page/3 => generated 148232 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 102/209] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:53:06 2019] GET /page/2 => generated 147997 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 75/210] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:53:10 2019] GET /page/3 => generated 148232 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 103/211] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:53:49 2019] GET /page/4 => generated 148459 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 76/212] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:54:15 2019] GET /page/2 => generated 147997 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 14/213] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:54:19 2019] GET /page/3 => generated 148232 bytes in 95 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 104/214] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:54:21 2019] GET /page/2 => generated 147997 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 77/215] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:54:29 2019] GET /index/ => generated 147544 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 78/216] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:56:24 2019] GET /index/ => generated 147544 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 105/217] 192.168.1.38 () {48 vars in 963 bytes} [Fri Nov  8 09:56:46 2019] GET /index/ => generated 147544 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 106/218] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  8 09:59:52 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 79/219] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  8 09:59:55 2019] POST /login/ => generated 2053 bytes in 192 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 107/220] 192.168.1.188 () {52 vars in 1033 bytes} [Fri Nov  8 09:59:59 2019] POST /login/ => generated 0 bytes in 194 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 21/221] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 09:59:59 2019] GET /index/ => generated 147544 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 22/222] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:46 2019] GET /index/ => generated 147544 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 108/223] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:47 2019] GET /index/ => generated 147544 bytes in 88 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 23/224] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:48 2019] GET /index/ => generated 147544 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 109/225] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:48 2019] GET /index/ => generated 147544 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 80/226] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:48 2019] GET /index/ => generated 147544 bytes in 89 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 110/227] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:01:49 2019] GET /index/ => generated 147544 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 111/228] 192.168.1.188 () {48 vars in 924 bytes} [Fri Nov  8 10:02:14 2019] GET /edit/2846/ => generated 8784 bytes in 112 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 26592|app: 0|req: 81/229] 192.168.1.188 () {44 vars in 799 bytes} [Fri Nov  8 10:02:16 2019] GET /favicon.ico => generated 3669 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 112/230] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:03:06 2019] GET /page/2 => generated 147997 bytes in 91 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 82/231] 192.168.1.188 () {48 vars in 916 bytes} [Fri Nov  8 10:03:46 2019] GET /page/6 => generated 148916 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-06
+[pid: 26603|app: 0|req: 113/232] 192.168.1.188 () {48 vars in 950 bytes} [Fri Nov  8 10:04:01 2019] GET /search/date=2019-11-06/ => generated 146527 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-06
+[pid: 26602|app: 0|req: 24/233] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  8 10:04:30 2019] GET /search/date=2019-11-06/page/2 => generated 94958 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-07
+[pid: 26603|app: 0|req: 114/234] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  8 10:05:36 2019] GET /search/date=2019-11-07/ => generated 146518 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-07
+[pid: 26603|app: 0|req: 115/235] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  8 10:05:57 2019] GET /search/date=2019-11-07/page/2 => generated 70886 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26592|app: 0|req: 83/236] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  8 10:07:44 2019] GET /search/date=2019-11-08/ => generated 83843 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 25/237] 192.168.1.188 () {48 vars in 933 bytes} [Fri Nov  8 10:08:45 2019] GET /index/ => generated 147544 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 116/238] 192.168.1.188 () {46 vars in 861 bytes} [Fri Nov  8 10:13:40 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 117/239] 192.168.1.188 () {52 vars in 1027 bytes} [Fri Nov  8 10:13:46 2019] POST /login/ => generated 0 bytes in 195 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 84/240] 192.168.1.188 () {48 vars in 910 bytes} [Fri Nov  8 10:13:46 2019] GET /index/ => generated 147545 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-06
+[pid: 26603|app: 0|req: 118/241] 192.168.1.188 () {48 vars in 950 bytes} [Fri Nov  8 10:15:12 2019] GET /search/date=2019-11-06/ => generated 146527 bytes in 94 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-06
+[pid: 26601|app: 0|req: 15/242] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  8 10:15:16 2019] GET /search/date=2019-11-06/page/2 => generated 94958 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-07
+[pid: 26592|app: 0|req: 85/243] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  8 10:17:17 2019] GET /search/date=2019-11-07/ => generated 146518 bytes in 103 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-07
+[pid: 26603|app: 0|req: 119/244] 192.168.1.188 () {48 vars in 979 bytes} [Fri Nov  8 10:17:26 2019] GET /search/date=2019-11-07/page/2 => generated 70886 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26601|app: 0|req: 16/245] 192.168.1.188 () {48 vars in 973 bytes} [Fri Nov  8 10:18:03 2019] GET /search/date=2019-11-08/ => generated 90725 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26603|app: 0|req: 120/246] 192.168.1.188 () {48 vars in 967 bytes} [Fri Nov  8 10:18:52 2019] GET /search/date=2019-11-08/ => generated 90725 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 121/247] 192.168.1.188 () {48 vars in 933 bytes} [Fri Nov  8 10:21:57 2019] GET /index/ => generated 147546 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26601|app: 0|req: 17/248] 192.168.1.188 () {48 vars in 950 bytes} [Fri Nov  8 10:22:03 2019] GET /search/date=2019-11-08/ => generated 94164 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 122/249] 192.168.1.80 () {46 vars in 843 bytes} [Fri Nov  8 16:59:29 2019] GET / => generated 1841 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 123/250] 192.168.1.80 () {46 vars in 843 bytes} [Sat Nov  9 14:34:56 2019] GET / => generated 1841 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 26603|app: 0|req: 124/251] 192.168.1.80 () {44 vars in 756 bytes} [Sun Nov 10 21:08:36 2019] GET /favicon.ico => generated 3669 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 86/252] 192.168.1.80 () {46 vars in 843 bytes} [Sun Nov 10 21:08:41 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 125/253] 192.168.1.38 () {46 vars in 907 bytes} [Mon Nov 11 09:15:17 2019] GET / => generated 1841 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 87/254] 192.168.1.38 () {56 vars in 1139 bytes} [Mon Nov 11 09:15:20 2019] POST /login/ => generated 0 bytes in 214 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 126/255] 192.168.1.38 () {50 vars in 987 bytes} [Mon Nov 11 09:15:20 2019] GET /index/ => generated 147556 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 127/256] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 09:21:48 2019] GET /index/ => generated 147556 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 128/257] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 09:43:24 2019] GET /page/2 => generated 148009 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 88/258] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 09:43:27 2019] GET /index/ => generated 147556 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 129/259] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 09:43:34 2019] GET /index/ => generated 147559 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 130/260] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 10:13:36 2019] GET /index/ => generated 147559 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 131/261] 192.168.1.38 () {48 vars in 962 bytes} [Mon Nov 11 10:37:32 2019] GET /index/ => generated 147560 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 132/262] 192.168.1.80 () {46 vars in 843 bytes} [Mon Nov 11 11:03:11 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 133/263] 192.168.1.38 () {48 vars in 965 bytes} [Mon Nov 11 11:12:08 2019] GET /upload/ => generated 4321 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 134/264] 192.168.1.38 () {48 vars in 964 bytes} [Mon Nov 11 11:12:09 2019] GET /index/ => generated 147567 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 135/265] 192.168.1.38 () {48 vars in 969 bytes} [Mon Nov 11 11:12:10 2019] GET /overload/ => generated 8074 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 89/266] 192.168.1.38 () {48 vars in 972 bytes} [Mon Nov 11 11:12:12 2019] GET /overload/ => generated 8074 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 26/267] 192.168.1.38 () {48 vars in 972 bytes} [Mon Nov 11 11:12:12 2019] GET /overload/ => generated 8074 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 90/268] 192.168.1.38 () {48 vars in 972 bytes} [Mon Nov 11 11:12:13 2019] GET /overload/ => generated 8074 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 136/269] 192.168.1.38 () {48 vars in 968 bytes} [Mon Nov 11 11:12:16 2019] GET /upload/ => generated 4321 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 18/270] 192.168.1.38 () {48 vars in 964 bytes} [Mon Nov 11 11:12:17 2019] GET /index/ => generated 147567 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 19/271] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 11:34:33 2019] GET /index/ => generated 147565 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26603|app: 0|req: 137/272] 192.168.1.38 () {48 vars in 997 bytes} [Mon Nov 11 11:35:20 2019] GET /search/date=2019-11-08/ => generated 146521 bytes in 72 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26592|app: 0|req: 91/273] 192.168.1.38 () {48 vars in 1026 bytes} [Mon Nov 11 11:35:22 2019] GET /search/date=2019-11-08/page/2 => generated 88062 bytes in 92 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-09
+[pid: 26592|app: 0|req: 92/274] 192.168.1.38 () {48 vars in 1020 bytes} [Mon Nov 11 11:36:55 2019] GET /search/date=2019-11-09/ => generated 146493 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-09
+[pid: 26603|app: 0|req: 138/275] 192.168.1.38 () {48 vars in 1026 bytes} [Mon Nov 11 11:36:58 2019] GET /search/date=2019-11-09/page/2 => generated 53678 bytes in 67 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-10
+[pid: 26592|app: 0|req: 93/276] 192.168.1.38 () {48 vars in 1020 bytes} [Mon Nov 11 11:37:22 2019] GET /search/date=2019-11-10/ => generated 146511 bytes in 84 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-10
+[pid: 26601|app: 0|req: 20/277] 192.168.1.38 () {48 vars in 1026 bytes} [Mon Nov 11 11:37:24 2019] GET /search/date=2019-11-10/page/2 => generated 64010 bytes in 59 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-11
+[pid: 26592|app: 0|req: 94/278] 192.168.1.38 () {48 vars in 1020 bytes} [Mon Nov 11 11:37:50 2019] GET /search/date=2019-11-11/ => generated 128600 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 139/279] 192.168.1.188 () {46 vars in 861 bytes} [Mon Nov 11 13:15:49 2019] GET / => generated 1841 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 140/280] 192.168.1.188 () {52 vars in 1027 bytes} [Mon Nov 11 13:15:52 2019] POST /login/ => generated 0 bytes in 258 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 95/281] 192.168.1.188 () {48 vars in 910 bytes} [Mon Nov 11 13:15:53 2019] GET /index/ => generated 147570 bytes in 123 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-11
+[pid: 26603|app: 0|req: 141/282] 192.168.1.188 () {48 vars in 950 bytes} [Mon Nov 11 13:16:16 2019] GET /search/date=2019-11-11/ => generated 146529 bytes in 103 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-11
+[pid: 26601|app: 0|req: 21/283] 192.168.1.188 () {48 vars in 979 bytes} [Mon Nov 11 13:16:19 2019] GET /search/date=2019-11-11/page/2 => generated 12390 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-11
+[pid: 26602|app: 0|req: 27/284] 192.168.1.188 () {48 vars in 973 bytes} [Mon Nov 11 13:16:23 2019] GET /search/date=2019-11-11/ => generated 146529 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 158, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1334, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in as_sql
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in <listcomp>
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1277, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1218, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 789, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1429, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1369, in to_python
+    parsed = parse_datetime(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/dateparse.py", line 106, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+
+[pid: 26592|app: 0|req: 96/285] 192.168.1.188 () {48 vars in 933 bytes} [Mon Nov 11 13:21:25 2019] GET /index/ => generated 147570 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-11
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 158, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1334, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in as_sql
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in <listcomp>
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1277, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1218, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 789, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1429, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1369, in to_python
+    parsed = parse_datetime(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/dateparse.py", line 106, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+
+[pid: 26603|app: 0|req: 142/286] 192.168.1.188 () {48 vars in 950 bytes} [Mon Nov 11 13:21:31 2019] GET /search/date=2019-11-11/ => generated 146529 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26603|app: 0|req: 143/287] 192.168.1.188 () {48 vars in 967 bytes} [Mon Nov 11 13:22:18 2019] GET /search/date=2019-11-08/ => generated 146521 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26592|app: 0|req: 97/288] 192.168.1.188 () {48 vars in 979 bytes} [Mon Nov 11 13:22:21 2019] GET /search/date=2019-11-08/page/2 => generated 88062 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26603|app: 0|req: 144/289] 192.168.1.188 () {48 vars in 973 bytes} [Mon Nov 11 13:23:37 2019] GET /search/date=2019-11-08/ => generated 146521 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+keywords =  date=2019-11-08
+[pid: 26603|app: 0|req: 145/290] 192.168.1.188 () {48 vars in 979 bytes} [Mon Nov 11 13:23:53 2019] GET /search/date=2019-11-08/page/2 => generated 88062 bytes in 65 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+keywords =  date=2019-11-09
+[pid: 26592|app: 0|req: 98/291] 192.168.1.188 () {48 vars in 973 bytes} [Mon Nov 11 13:24:09 2019] GET /search/date=2019-11-09/ => generated 146493 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 99/292] 192.168.1.188 () {48 vars in 933 bytes} [Mon Nov 11 13:25:44 2019] GET /index/ => generated 147570 bytes in 80 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 100/293] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:25:45 2019] GET /index/ => generated 147570 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 146/294] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:25:46 2019] GET /index/ => generated 147570 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 28/295] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:25:46 2019] GET /index/ => generated 147570 bytes in 86 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 147/296] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:25:47 2019] GET /index/ => generated 147570 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 148/297] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:25:48 2019] GET /index/ => generated 147570 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 149/298] 192.168.1.188 () {46 vars in 861 bytes} [Mon Nov 11 13:54:27 2019] GET / => generated 1841 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 150/299] 192.168.1.188 () {52 vars in 1027 bytes} [Mon Nov 11 13:54:30 2019] POST /login/ => generated 0 bytes in 268 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 101/300] 192.168.1.188 () {48 vars in 910 bytes} [Mon Nov 11 13:54:30 2019] GET /index/ => generated 147570 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 151/301] 192.168.1.188 () {48 vars in 916 bytes} [Mon Nov 11 13:54:33 2019] GET /index/ => generated 147570 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 102/302] 192.168.1.38 () {48 vars in 980 bytes} [Mon Nov 11 14:00:42 2019] GET /index/ => generated 147570 bytes in 52 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 29/303] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:00:48 2019] GET /index/ => generated 147570 bytes in 79 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 103/304] 192.168.1.38 () {48 vars in 965 bytes} [Mon Nov 11 14:00:49 2019] GET /upload/ => generated 4321 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 152/305] 192.168.1.38 () {48 vars in 970 bytes} [Mon Nov 11 14:00:49 2019] GET /overload/ => generated 8074 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 104/306] 192.168.1.38 () {48 vars in 966 bytes} [Mon Nov 11 14:00:50 2019] GET /index/ => generated 147570 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 153/307] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:00:50 2019] GET /index/ => generated 147570 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 154/308] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:04:23 2019] GET /index/ => generated 147570 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 155/309] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:53 2019] GET /index/ => generated 147570 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 105/310] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:53 2019] GET /index/ => generated 147570 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 156/311] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:54 2019] GET /index/ => generated 147570 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 157/312] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:54 2019] GET /index/ => generated 147570 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 158/313] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:54 2019] GET /index/ => generated 147570 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./myApp/com_to_db.py", line 158, in read2db
+    propane=propane)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1334, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in as_sql
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1278, in <listcomp>
+    for obj in self.query.objs
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1277, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1218, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 789, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1429, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/fields/__init__.py", line 1369, in to_python
+    parsed = parse_datetime(value)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/dateparse.py", line 106, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+
+[pid: 26602|app: 0|req: 30/314] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 14:06:56 2019] GET /index/ => generated 147570 bytes in 169 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 159/315] 192.168.1.38 () {48 vars in 990 bytes} [Mon Nov 11 14:09:44 2019] GET /index/?order=started => generated 147484 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 106/316] 192.168.1.38 () {48 vars in 1006 bytes} [Mon Nov 11 14:09:45 2019] GET /index/?order=-started => generated 147675 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26601|app: 0|req: 22/317] 192.168.1.38 () {48 vars in 978 bytes} [Mon Nov 11 14:09:46 2019] GET /index/ => generated 147570 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 160/318] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 15:21:42 2019] GET /index/ => generated 147556 bytes in 56 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 161/319] 192.168.1.38 () {50 vars in 994 bytes} [Mon Nov 11 15:34:46 2019] GET /index/ => generated 147556 bytes in 82 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 107/320] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 15:34:49 2019] GET /index/ => generated 147556 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 31/321] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 15:34:50 2019] GET /index/ => generated 147556 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 162/322] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 15:34:50 2019] GET /index/ => generated 147556 bytes in 60 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 108/323] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 16:01:45 2019] GET /index/ => generated 147556 bytes in 54 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 163/324] 192.168.1.38 () {48 vars in 965 bytes} [Mon Nov 11 16:43:04 2019] GET /page/77 => generated 85585 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 26592|app: 0|req: 109/325] 192.168.1.38 () {48 vars in 966 bytes} [Mon Nov 11 16:43:05 2019] GET /page/75 => generated 148107 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 164/326] 192.168.1.38 () {48 vars in 964 bytes} [Mon Nov 11 16:43:07 2019] GET /page/2 => generated 147989 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26602|app: 0|req: 32/327] 192.168.1.38 () {48 vars in 963 bytes} [Mon Nov 11 16:43:09 2019] GET /index/ => generated 147556 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 165/328] 192.168.1.38 () {46 vars in 907 bytes} [Tue Nov 12 10:09:53 2019] GET / => generated 1841 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 166/329] 192.168.1.38 () {56 vars in 1139 bytes} [Tue Nov 12 10:09:56 2019] POST /login/ => generated 0 bytes in 190 msecs (HTTP/1.1 302) 7 headers in 456 bytes (1 switches on core 0)
+[pid: 26603|app: 0|req: 167/330] 192.168.1.38 () {50 vars in 987 bytes} [Tue Nov 12 10:09:56 2019] GET /index/ => generated 147556 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)

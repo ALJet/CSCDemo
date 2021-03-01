@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<title>后台管理</title>
+    <!--必须添加一个动态的地址 不然不在同一目录下的文件找不到资源 -->
+    <link rel="shortcut icon" href="{% static 'image/logo.png' %}" />
+<link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div class="login_box">
+      <div class="login_l_img"><img src="{% static 'image/login-img.png' %}" /></div>
+      <div class="login">
+          <div tabindex="9" class="login_logo"><a href="#"><img src="{% static 'image/login_logo.png' %}" /></a></div>
+          <div class="login_name">
+               <p>槽车充装系统</p>
+          </div>
+
+          <form method="post" action="{% url 'login' %}">{% csrf_token %}
+              <input name="username" tabindex="1" type="text" placeholder="用户名"   onfocus="this.value=''" onblur="if(this.value=='用户名'){this.value=''}">
+
+{#              <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>#}
+<input name="password"  tabindex="2" type="password" id="password" placeholder="密码"  onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};"/>
+                <div style="text-align: center;">
+              <label style="color : red;text-align: center"> {{ obj.username.errors.0}}{{ obj.password.errors.0}}</label>
+              <div class="panel-body" style="text-align: center">
+            {% if messages %}
+                <ul class="list-group">
+                    {% for message in messages %}
+                        <li class="list-group-item  {{ message.tags }}" style="color:red;">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+          </div>
+                </div>
+
+              <input tabindex="3" value="登录" style="width:100%;" type="submit">
+          </form>
+
+      </div>
+
+      <div class="copyright">By LJL 目前测试阶段</div>
+</div>
+</body>
+</html>

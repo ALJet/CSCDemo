@@ -1,0 +1,11 @@
+APScheduler==3.6.0
+Django==2.2.3
+django-crispy-forms==1.7.2
+djangorestframework==3.10.1
+psycopg2==2.8.3
+pyserial==3.4
+pytz==2019.1
+six==1.12.0
+sqlparse==0.3.0
+tzlocal==1.5.1
+xlwt==1.3.0
